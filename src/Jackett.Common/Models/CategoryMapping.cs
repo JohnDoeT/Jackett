@@ -1,6 +1,6 @@
 ﻿namespace Jackett.Common.Models
 {
-    class CategoryMapping
+    public class CategoryMapping
     {
         public CategoryMapping(string trackerCat, string trackerCatDesc, int newzCat)
         {

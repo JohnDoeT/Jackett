@@ -353,6 +353,7 @@ namespace Jackett.Common.Indexers
         }
 
         protected abstract Task<IEnumerable<ReleaseInfo>> PerformQuery(TorznabQuery query);
+        public abstract List<CategoryMapping> GetAllCategoryMappings();
     }
 
     public abstract class BaseWebIndexer : BaseIndexer, IWebIndexer
@@ -662,6 +663,11 @@ namespace Jackett.Common.Indexers
                 });
                 Mapper.Map(redirectedResponse, incomingResponse);
             }
+        }
+
+        public override List<CategoryMapping> GetAllCategoryMappings()
+        {
+            return categoryMapping;
         }
 
         protected List<string> GetAllTrackerCategories()

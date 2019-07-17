@@ -54,6 +54,8 @@ namespace Jackett.Common.Indexers
         Task<IndexerResult> ResultsForQuery(TorznabQuery query);
 
         bool CanHandleQuery(TorznabQuery query);
+
+        List<CategoryMapping> GetAllCategoryMappings();
     }
 
     public interface IWebIndexer : IIndexer
