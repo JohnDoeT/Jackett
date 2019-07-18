@@ -1150,7 +1150,9 @@ namespace Jackett.Common.Indexers
             variables[".Keywords"] = applyFilters((string)variables[".Query.Keywords"], Search.Keywordsfilters);
 
             // TODO: prepare queries first and then send them parallel 
-            var SearchPaths = Search.Paths;
+            // TorentRT hack: do not read multipage data even if config specifies it. It is too slow. I'd rather use paging instead.
+            // Take maximum 2 for now.
+            var SearchPaths = Search.Paths.Take(2);
             foreach (var SearchPath in SearchPaths)
             {
                 // skip path if categories don't match
