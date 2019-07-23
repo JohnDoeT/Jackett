@@ -20,6 +20,7 @@ using Jackett.Common.Utils.Clients;
 using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json.Linq;
 using NLog;
+using System.Globalization;
 
 namespace Jackett.Common.Indexers
 {
@@ -893,7 +894,7 @@ namespace Jackett.Common.Indexers
                         try
                         {
                             var Date = DateTimeUtil.ParseDateTimeGoLang(Data, layout);
-                            Data = Date.ToString(DateTimeUtil.RFC1123ZPattern);
+                            Data = Date.ToString(DateTimeUtil.RFC1123ZPattern, CultureInfo.InvariantCulture);
                         }
                         catch (FormatException ex)
                         {
@@ -959,10 +960,10 @@ namespace Jackett.Common.Indexers
                         break;
                     case "timeago":
                     case "reltime":
-                        Data = DateTimeUtil.FromTimeAgo(Data).ToString(DateTimeUtil.RFC1123ZPattern);
+                        Data = DateTimeUtil.FromTimeAgo(Data).ToString(DateTimeUtil.RFC1123ZPattern, CultureInfo.InvariantCulture);
                         break;
                     case "fuzzytime":
-                        Data = DateTimeUtil.FromUnknown(Data).ToString(DateTimeUtil.RFC1123ZPattern);
+                        Data = DateTimeUtil.FromUnknown(Data).ToString(DateTimeUtil.RFC1123ZPattern, CultureInfo.InvariantCulture);
                         break;
                     case "validfilename":
                         Data = StringUtil.MakeValidFileName(Data, '_', false);
@@ -1419,7 +1420,7 @@ namespace Jackett.Common.Indexers
                                             break;
                                         case "date":
                                             release.PublishDate = DateTimeUtil.FromUnknown(value);
-                                            value = release.PublishDate.ToString(DateTimeUtil.RFC1123ZPattern);
+                                            value = release.PublishDate.ToString(DateTimeUtil.RFC1123ZPattern, CultureInfo.InvariantCulture);
                                             break;
                                         case "files":
                                             release.Files = ParseUtil.CoerceLong(value);
