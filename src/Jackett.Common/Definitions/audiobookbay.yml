@@ -9,66 +9,67 @@
     - http://audiobookbay.nl/
     - https://audiobookbay.la/
 
+# $('#cat option').each(function(el) { console.log(' - id: "' + $(this).attr('value') + '", cat: Audio/Audiobook, desc: "'  + $(this).text() + '"]')})
   caps:
     categorymappings:
-      - {id: "(Post)apocalyptic", cat: Audio/Audiobook, desc: "(Post)apocalyptic"}
-      - {id: "True", cat: Audio/Audiobook, desc: "True Crime"}
-      - {id: Action, cat: Audio/Audiobook, desc: "Action"}
-      - {id: Adults, cat: Audio/Audiobook, desc: "Adults"}
-      - {id: Adventure, cat: Audio/Audiobook, desc: "Adventure"}
-      - {id: Anthology, cat: Audio/Audiobook, desc: "Anthology"}
-      - {id: Art, cat: Audio/Audiobook, desc: "Art"}
-      - {id: Autobiography, cat: Audio/Audiobook, desc: "Autobiography & Biographies"}
-      - {id: Bestsellers, cat: Audio/Audiobook, desc: "Bestsellers"}
-      - {id: Business, cat: Audio/Audiobook, desc: "Business"}
-      - {id: Children, cat: Audio/Audiobook, desc: "Children"}
-      - {id: Classic, cat: Audio/Audiobook, desc: "Classic"}
-      - {id: Computer, cat: Audio/Audiobook, desc: "Computer"}
-      - {id: Contemporary, cat: Audio/Audiobook, desc: "Contemporary"}
-      - {id: Crime, cat: Audio/Audiobook, desc: "Crime"}
-      - {id: Detective, cat: Audio/Audiobook, desc: "Detective"}
-      - {id: Doctor, cat: Audio/Audiobook, desc: "Doctor Who"}
-      - {id: Documentary, cat: Audio/Audiobook, desc: "Documentary"}
-      - {id: Education, cat: Audio/Audiobook, desc: "Education"}
-      - {id: Fantasy, cat: Audio/Audiobook, desc: "Fantasy"}
-      - {id: Full, cat: Audio/Audiobook, desc: "Full Cast"}
-      - {id: Gay, cat: Audio/Audiobook, desc: "Gay"}
-      - {id: General, cat: Audio/Audiobook, desc: "General Fiction"}
-      - {id: Historical, cat: Audio/Audiobook, desc: "Historical Fiction"}
-      - {id: History, cat: Audio/Audiobook, desc: "History"}
-      - {id: Horror, cat: Audio/Audiobook, desc: "Horror"}
-      - {id: Humor, cat: Audio/Audiobook, desc: "Humor"}
-      - {id: LGBT, cat: Audio/Audiobook, desc: "LGBT"}
-      - {id: Lecture, cat: Audio/Audiobook, desc: "Lecture"}
-      - {id: Lesbian, cat: Audio/Audiobook, desc: "Lesbian"}
-      - {id: Libertarian, cat: Audio/Audiobook, desc: "Libertarian"}
-      - {id: LitRPG, cat: Audio/Audiobook, desc: "LitRPG"}
-      - {id: Literature, cat: Audio/Audiobook, desc: "Literature"}
-      - {id: Military, cat: Audio/Audiobook, desc: "Military"}
-      - {id: Misc., cat: Audio/Audiobook, desc: "Misc. Non-fiction"}
-      - {id: Mystery, cat: Audio/Audiobook, desc: "Mystery"}
-      - {id: Novel, cat: Audio/Audiobook, desc: "Novel"}
-      - {id: Other, cat: Audio/Audiobook, desc: "Other"}
-      - {id: Paranormal, cat: Audio/Audiobook, desc: "Paranormal"}
-      - {id: Plays, cat: Audio/Audiobook, desc: "Plays & Theater"}
-      - {id: Poetry, cat: Audio/Audiobook, desc: "Poetry"}
-      - {id: Political, cat: Audio/Audiobook, desc: "Political"}
-      - {id: Radio, cat: Audio/Audiobook, desc: "Radio Productions"}
-      - {id: Romance, cat: Audio/Audiobook, desc: "Romance"}
-      - {id: Sci-Fi, cat: Audio/Audiobook, desc: "Sci-Fi"}
-      - {id: Science, cat: Audio/Audiobook, desc: "Science"}
-      - {id: Self-help, cat: Audio/Audiobook, desc: "Self-help"}
-      - {id: Sex, cat: Audio/Audiobook, desc: "Sex Scenes"}
-      - {id: Short, cat: Audio/Audiobook, desc: "Short Story"}
-      - {id: Spiritual, cat: Audio/Audiobook, desc: "Spiritual & Religious"}
-      - {id: Sports, cat: Audio/Audiobook, desc: "Sports"}
-      - {id: Suspense, cat: Audio/Audiobook, desc: "Suspense"}
-      - {id: Teen, cat: Audio/Audiobook, desc: "Teen & Young Adult"}
-      - {id: The, cat: Audio/Audiobook, desc: "The Undead"}
-      - {id: Thriller, cat: Audio/Audiobook, desc: "Thriller"}
-      - {id: Tutorial, cat: Audio/Audiobook, desc: "Tutorial"}
-      - {id: Violence, cat: Audio/Audiobook, desc: "Violence"}
-      - {id: Westerns, cat: Audio/Audiobook, desc: "Westerns"}
+      - {id: "(Post)apocalyptic", cat: Audio/Audiobook, desc: "(Post)apocalyptic", raw: "36021"}
+      - {id: "True", cat: Audio/Audiobook, desc: "True Crime", raw: "11685"}
+      - {id: Action, cat: Audio/Audiobook, desc: "Action", raw: "101"}
+      - {id: Adults, cat: Audio/Audiobook, desc: "Adults", raw: "23195"}
+      - {id: Adventure, cat: Audio/Audiobook, desc: "Adventure", raw: "232"}
+      - {id: Anthology, cat: Audio/Audiobook, desc: "Anthology", raw: "151"}
+      - {id: Art, cat: Audio/Audiobook, desc: "Art", raw: "30"}
+      - {id: Autobiography, cat: Audio/Audiobook, desc: "Autobiography & Biographies", raw: "24289"}
+      - {id: Bestsellers, cat: Audio/Audiobook, desc: "Bestsellers", raw: "16650"}
+      - {id: Business, cat: Audio/Audiobook, desc: "Business", raw: "104"}
+      - {id: Children, cat: Audio/Audiobook, desc: "Children", raw: "98"}
+      - {id: Classic, cat: Audio/Audiobook, desc: "Classic", raw: "85"}
+      - {id: Computer, cat: Audio/Audiobook, desc: "Computer", raw: "233"}
+      - {id: Contemporary, cat: Audio/Audiobook, desc: "Contemporary", raw: "231"}
+      - {id: Crime, cat: Audio/Audiobook, desc: "Crime", raw: "121"}
+      - {id: Detective, cat: Audio/Audiobook, desc: "Detective", raw: "122"}
+      - {id: Doctor, cat: Audio/Audiobook, desc: "Doctor Who", raw: "15243"}
+      - {id: Documentary, cat: Audio/Audiobook, desc: "Documentary", raw: "107"}
+      - {id: Education, cat: Audio/Audiobook, desc: "Education", raw: "105"}
+      - {id: Fantasy, cat: Audio/Audiobook, desc: "Fantasy", raw: "65"}
+      - {id: Full, cat: Audio/Audiobook, desc: "Full Cast", raw: "17502"}
+      - {id: Gay, cat: Audio/Audiobook, desc: "Gay", raw: "17180"}
+      - {id: General, cat: Audio/Audiobook, desc: "General Fiction", raw: "21110"}
+      - {id: Historical, cat: Audio/Audiobook, desc: "Historical Fiction", raw: "2315"}
+      - {id: History, cat: Audio/Audiobook, desc: "History", raw: "19"}
+      - {id: Horror, cat: Audio/Audiobook, desc: "Horror", raw: "2551"}
+      - {id: Humor, cat: Audio/Audiobook, desc: "Humor", raw: "234"}
+      - {id: LGBT, cat: Audio/Audiobook, desc: "LGBT", raw: "20404"}
+      - {id: Lecture, cat: Audio/Audiobook, desc: "Lecture", raw: "115"}
+      - {id: Lesbian, cat: Audio/Audiobook, desc: "Lesbian", raw: "20962"}
+      - {id: Libertarian, cat: Audio/Audiobook, desc: "Libertarian", raw: "23198"}
+      - {id: LitRPG, cat: Audio/Audiobook, desc: "LitRPG", raw: "30126"}
+      - {id: Literature, cat: Audio/Audiobook, desc: "Literature", raw: "76"}
+      - {id: Military, cat: Audio/Audiobook, desc: "Military", raw: "790"}
+      - {id: Misc., cat: Audio/Audiobook, desc: "Misc. Non-fiction", raw: "25881"}
+      - {id: Mystery, cat: Audio/Audiobook, desc: "Mystery", raw: "111"}
+      - {id: Novel, cat: Audio/Audiobook, desc: "Novel", raw: "108"}
+      - {id: Other, cat: Audio/Audiobook, desc: "Other", raw: "1"}
+      - {id: Paranormal, cat: Audio/Audiobook, desc: "Paranormal", raw: "235"}
+      - {id: Plays, cat: Audio/Audiobook, desc: "Plays & Theater", raw: "26398"}
+      - {id: Poetry, cat: Audio/Audiobook, desc: "Poetry", raw: "1699"}
+      - {id: Political, cat: Audio/Audiobook, desc: "Political", raw: "2010"}
+      - {id: Radio, cat: Audio/Audiobook, desc: "Radio Productions", raw: "26397"}
+      - {id: Romance, cat: Audio/Audiobook, desc: "Romance", raw: "103"}
+      - {id: Sci-Fi, cat: Audio/Audiobook, desc: "Sci-Fi", raw: "100"}
+      - {id: Science, cat: Audio/Audiobook, desc: "Science", raw: "99"}
+      - {id: Self-help, cat: Audio/Audiobook, desc: "Self-help", raw: "1663"}
+      - {id: Sex, cat: Audio/Audiobook, desc: "Sex Scenes", raw: "23197"}
+      - {id: Short, cat: Audio/Audiobook, desc: "Short Story", raw: "16706"}
+      - {id: Spiritual, cat: Audio/Audiobook, desc: "Spiritual & Religious", raw: "22"}
+      - {id: Sports, cat: Audio/Audiobook, desc: "Sports", raw: "432"}
+      - {id: Suspense, cat: Audio/Audiobook, desc: "Suspense", raw: "156"}
+      - {id: Teen, cat: Audio/Audiobook, desc: "Teen & Young Adult", raw: "2986"}
+      - {id: The, cat: Audio/Audiobook, desc: "The Undead", raw: "23196"}
+      - {id: Thriller, cat: Audio/Audiobook, desc: "Thriller", raw: "102"}
+      - {id: Tutorial, cat: Audio/Audiobook, desc: "Tutorial", raw: "110"}
+      - {id: Violence, cat: Audio/Audiobook, desc: "Violence", raw: "6322"}
+      - {id: Westerns, cat: Audio/Audiobook, desc: "Westerns", raw: "26010"}
 
     modes:
       search: [q]
@@ -96,11 +97,15 @@
       # with just 7 results per page, try to grab up to 35 results
       # http://audiobookbay.nl/?s=teeth
       # http://audiobookbay.nl/page/2/?s=teeth
+      # http://audiobookbay.nl/page/2/?s=online&cat=30126
       - path: "{{if .Keywords}}/?s={{ .Keywords}}{{else}}/{{end}}"
       - path: "{{if .Keywords}}/page/2/?s={{ .Keywords}}{{else}}{{end}}"
       - path: "{{if .Keywords}}/page/3/?s={{ .Keywords}}{{else}}{{end}}"
       - path: "{{if .Keywords}}/page/4/?s={{ .Keywords}}{{else}}{{end}}"
       - path: "{{if .Keywords}}/page/5/?s={{ .Keywords}}{{else}}{{end}}"
+    inputs:
+      $raw: "{{range .Query.TrackerCategories}}cat={{.}}&{{end}}"
+
     rows:
       selector: div.post:has(div[class="postTitle"])
     fields:

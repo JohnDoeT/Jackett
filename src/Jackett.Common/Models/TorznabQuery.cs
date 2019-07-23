@@ -11,6 +11,7 @@ namespace Jackett.Common.Models
     {
         public string QueryType { get; set; }
         public int[] Categories { get; set; }
+        public string[] TrackerCategories { get; set; }
         public int Extended { get; set; }
         public string ApiKey { get; set; }
         public int Limit { get; set; }

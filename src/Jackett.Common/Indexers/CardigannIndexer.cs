@@ -173,7 +173,7 @@ namespace Jackett.Common.Indexers
                             continue;
                         }
                     }
-                    AddCategoryMapping(Categorymapping.id, TorznabCat, Categorymapping.desc);
+                    AddCategoryMapping(Categorymapping.id, TorznabCat, Categorymapping.desc, Categorymapping.raw);
                     if (Categorymapping.Default)
                         DefaultCategories.Add(Categorymapping.id);
                 }
@@ -1127,6 +1127,8 @@ namespace Jackett.Common.Indexers
             //variables[".Query.Genre"] = query.Genre ?? new List<string>();
             variables[".Query.Episode"] = query.GetEpisodeSearchString();
 
+            variables[".Query.TrackerCategories"] = query.TrackerCategories ?? new string[0];
+
             var mappedCategories = MapTorznabCapsToTrackers(query);
             if (mappedCategories.Count == 0)
             {
@@ -1212,7 +1214,7 @@ namespace Jackett.Common.Indexers
                 if (method == RequestType.GET)
                 {
                     if (queryCollection.Count > 0)
-                        searchUrl += "?" + queryCollection.GetQueryString(Encoding);
+                        searchUrl += (searchUrl.Contains("?") ? "&" : "?") + queryCollection.GetQueryString(Encoding);
                 }
                 var searchUrlUri = new Uri(searchUrl);
 

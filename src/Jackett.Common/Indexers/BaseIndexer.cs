@@ -675,9 +675,9 @@ namespace Jackett.Common.Indexers
             return categoryMapping.Select(x => x.TrackerCategory).ToList();
         }
 
-        protected void AddCategoryMapping(string trackerCategory, TorznabCategory newznabCategory, string trackerCategoryDesc = null)
+        protected void AddCategoryMapping(string trackerCategory, TorznabCategory newznabCategory, string trackerCategoryDesc = null, string selector_id = null)
         {
-            categoryMapping.Add(new CategoryMapping(trackerCategory, trackerCategoryDesc, newznabCategory.ID));
+            categoryMapping.Add(new CategoryMapping(trackerCategory, trackerCategoryDesc, newznabCategory.ID, selector_id));
             if (!TorznabCaps.Categories.Contains(newznabCategory))
             {
                 TorznabCaps.Categories.Add(newznabCategory);

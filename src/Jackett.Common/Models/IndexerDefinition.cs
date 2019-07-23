@@ -91,6 +91,7 @@ namespace Jackett.Common.Models
         public string id { get; set; }
         public string cat { get; set; }
         public string desc { get; set; }
+        public string raw { get; set; }
         public bool Default { get; set; }
     }
 
