@@ -34,6 +34,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * ConCen
  * cpasbien
  * cpasbienClone
+ * Demonoid
  * DIGBT
  * ETTV
  * EliteTorrent.biz
@@ -51,6 +52,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * KickAssTorrent (KATcr)
  * KickAssTorrent (thekat.se clone)
  * KikiBT
+ * LePorno
  * LimeTorrents
  * MacTorrents
  * MagnetDL
@@ -61,7 +63,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Newpct (aka: tvsinpagar, descargas2020, torrentlocura, torrentrapid, tumejortorrent, pctnew, etc)
  * Nyaa.si
  * Nyaa-Pantsu
- * Nyoo
  * OxTorrent
  * ProStyleX
  * QXR
@@ -97,6 +98,8 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Alein
  * AniDUB
  * ArenaBG
+ * BaibaKo
+ * Crazy's Corner
  * CzTorrent
  * Deildu
  * Film-Paleis
@@ -149,7 +152,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Awesome-HD (AHD)
  * AVG (Audio Video Games)
  * Avistaz (AsiaTorrents)
- * B2S-Share
  * Back-ups
  * BakaBT
  * BaconBits (bB)
@@ -170,7 +172,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * BJ-Share (BJ)
  * BlueBird
  * Blutopia (BLU)
- * Brasil Tracker
  * BroadcastTheNet (BTN)
  * BrokenStones
  * BTGigs (TG)
@@ -187,6 +188,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Cinematik
  * CinemaZ (EuTorrents)
  * Classix
+ * CrazySpirits
  * CrnaBerza
  * DanishBits (DB)
  * Dark-Shadow
@@ -209,6 +211,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Elit Tracker (ET)
  * Elite-Tracker
  * Empornium (EMP)
+ * eShareNet
  * eStone (XiDER, BeLoad)
  * Ethor.net (Thor's Land)
  * FANO.IN
@@ -261,14 +264,16 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * JPopsuki
  * Kapaki
  * Karagarga
+ * LaPauseTorrents
+ * Le Chaudron
  * Le Saloon
+ * LearnFlakes
  * LibraNet (LN)
  * LinkoManija
  * LosslessClub
  * M-Team TP (MTTP)
  * Magico (Trellas)
  * Majomparádé (TurkDepo)
- * Manicomio Share
  * Mega-Bliz
  * Mononoké-BT
  * MoreThanTV (MTV)
@@ -305,6 +310,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * PThome
  * PuntoTorrent
  * PWTorrents (PWT)
+ * R3V WTF!
  * Racing4Everyone (R4E)
  * RacingForMe (RFM)
  * Redacted (PassTheHeadphones)
@@ -318,6 +324,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * RPTorrents
  * SceneFZ
  * SceneHD
+ * ScenePalace (SP)
  * SceneReactor
  * SceneRush
  * SceneTime
@@ -330,7 +337,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Shellife (SL)
  * SiamBIT
  * SpaceTorrent
- * Speed-Share
  * SpeedCD
  * SpeedTorrent Reloaded
  * SportHD
@@ -340,8 +346,10 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Tapochek
  * Tasmanit
  * TeamHD
+ * TeamOS
  * TellyTorrent
  * TenYardTorrents (TYT)
+ * TheAudioScene
  * TheEmpire (TE)
  * The Geeks
  * The Horror Charnel (THC)

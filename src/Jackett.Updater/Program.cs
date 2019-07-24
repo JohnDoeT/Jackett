@@ -339,6 +339,10 @@ namespace Jackett.Updater
                 "Definitions/sharingue.yml",
                 "Definitions/cinefilhd.yml",
                 "Definitions/tbplus.yml",
+                "Definitions/manicomioshare.yml",
+                "Definitions/speed-share.yml",
+                "Definitions/b2s-share.yml",
+                "Definitions/nyoo.yml",
             };
 
             foreach (var oldFile in oldFiles)
