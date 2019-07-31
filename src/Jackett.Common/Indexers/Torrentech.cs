@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using AngleSharp.Dom;
 using AngleSharp.Html.Parser;
 using Jackett.Common.Models;
@@ -12,7 +13,6 @@ using Jackett.Common.Models.IndexerConfig;
 using Jackett.Common.Services.Interfaces;
 using Jackett.Common.Utils;
 using Jackett.Common.Utils.Clients;
-using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json.Linq;
 using NLog;
 
@@ -135,7 +135,8 @@ namespace Jackett.Common.Indexers
                         release.DownloadVolumeFactor = 1;
                         release.UploadVolumeFactor = 1;
 
-                        var id = QueryHelpers.ParseQuery(release.Comments.Query)["showtopic"].FirstOrDefault();
+                        //var id = QueryHelpers.ParseQuery(release.Comments.Query)["showtopic"].FirstOrDefault();
+                        var id = HttpUtility.ParseQueryString(release.Comments.Query)["showtopic"];
 
                         var desc = Row.QuerySelector("span.desc");
                         var forange = desc.QuerySelector("font.forange");

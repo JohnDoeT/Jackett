@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Microsoft.AspNetCore.WebUtilities;
+using System.Web;
 
 namespace Jackett.Common.Utils
 {
@@ -82,8 +82,10 @@ namespace Jackett.Common.Utils
                 return null;
             var qsStr = url.Split(new char[] { '?' }, 2)[1];
             qsStr = qsStr.Split(new char[] { '#' }, 2)[0];
-            var qs = QueryHelpers.ParseQuery(qsStr);
-            return qs[argument].FirstOrDefault();
+            //var qs = QueryHelpers.ParseQuery(qsStr);
+            var qs = HttpUtility.ParseQueryString(qsStr);
+            //return qs[argument].FirstOrDefault();
+            return qs[argument];
         }
 
         public static long? GetLongFromString(string str)

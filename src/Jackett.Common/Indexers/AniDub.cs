@@ -5,7 +5,6 @@ using Jackett.Common.Models.IndexerConfig.Bespoke;
 using Jackett.Common.Services.Interfaces;
 using Jackett.Common.Utils;
 using Jackett.Common.Utils.Clients;
-using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json.Linq;
 using NLog;
 using System;
@@ -15,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Jackett.Common.Indexers
 {
@@ -261,7 +261,8 @@ namespace Jackett.Common.Indexers
         private static string GetReleaseGuid(string url, IElement tabNode)
         {
             // Appending id to differentiate between different quality versions
-            return QueryHelpers.AddQueryString(url, "id", GetTorrentId(tabNode));
+            //return QueryHelpers.AddQueryString(url, "id", GetTorrentId(tabNode));
+            return url + ((url.IndexOf('?') > 0) ? "&" : "?") + "id=" + HttpUtility.UrlEncode(GetTorrentId(tabNode));
         }
 
         private static int GetReleaseLeechers(IElement tabNode)

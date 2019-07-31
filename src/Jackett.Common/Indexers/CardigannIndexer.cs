@@ -17,10 +17,10 @@ using static Jackett.Common.Models.IndexerConfig.ConfigurationData;
 using Jackett.Common.Services.Interfaces;
 using Jackett.Common.Utils;
 using Jackett.Common.Utils.Clients;
-using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json.Linq;
 using NLog;
 using System.Globalization;
+using System.Web;
 
 namespace Jackett.Common.Indexers
 {
@@ -1626,11 +1626,17 @@ namespace Jackett.Common.Indexers
             variables[prefix + ".Port"] = uri.Port.ToString();
             variables[prefix + ".PathAndQuery"] = uri.PathAndQuery;
             variables[prefix + ".Query"] = uri.Query;
-            var queryString = QueryHelpers.ParseQuery(uri.Query);
+            //var queryString = QueryHelpers.ParseQuery(uri.Query);
+            //foreach (string key in queryString.Keys)
+            //{
+            //    //If we have supplied the same query string multiple time, just take the first.
+            //    variables[prefix + ".Query." + key] = queryString[key].First();
+            //}
+            var queryString = HttpUtility.ParseQueryString(uri.Query);
             foreach (string key in queryString.Keys)
             {
                 //If we have supplied the same query string multiple time, just take the first.
-                variables[prefix + ".Query." + key] = queryString[key].First();
+                variables[prefix + ".Query." + key] = queryString[key];
             }
             return variables;
         }
