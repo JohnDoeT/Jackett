@@ -321,7 +321,6 @@ namespace Jackett.Updater
                 "System.Web.Http.Tracing.dll",
                 "Definitions/torrentkim.yml",
                 "Definitions/horriblesubs.yml",
-                "Definitions/idope.yml",
                 "Definitions/bt-scene.yml",
                 "Definitions/extratorrentclone.yml",
                 "Definitions/torrentcouch.yml",
@@ -332,7 +331,6 @@ namespace Jackett.Updater
                 "Definitions/redtopia.yml",
                 "Definitions/btxpress.yml",
                 "Definitions/btstornet.yml",
-                "Definitions/crazyhd.yml",
                 "Definitions/hdplus.yml",
                 "Definitions/gods.yml",
                 "Definitions/freedomhd.yml",
@@ -343,6 +341,14 @@ namespace Jackett.Updater
                 "Definitions/speed-share.yml",
                 "Definitions/b2s-share.yml",
                 "Definitions/nyoo.yml",
+                "Definitions/ultimategamerclub.yml",
+                "Definitions/evolutionpalace.yml",
+                "Definitions/qxr.yml",
+                "Definitions/btdigg.yml",
+                "Definitions/gfxnews.yml",
+                "Definitions/megabliz.yml",
+                "Definitions/tigers-dl.yml",
+                "Definitions/worldwidetorrents.yml",
             };
 
             foreach (var oldFile in oldFiles)

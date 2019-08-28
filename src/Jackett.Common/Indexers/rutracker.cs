@@ -1559,7 +1559,11 @@ namespace Jackett.Common.Indexers
                         release.Guid = release.Comments;
                         release.Size = ReleaseInfo.GetBytes(qSize.GetAttribute("data-ts_text"));
 
+<<<<<<< HEAD
                         var seeders = Row.QuerySelector("td:nth-child(7) > b").TextContent;
+=======
+                        var seeders = Row.QuerySelector("td:nth-child(7)").TextContent;
+>>>>>>> ed6eb09387d234e05e657734d7d3eb7ae8ceac7c
                         if (string.IsNullOrWhiteSpace(seeders))
                             seeders = "0";
                         release.Seeders = ParseUtil.CoerceInt(seeders);
