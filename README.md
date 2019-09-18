@@ -32,6 +32,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * BTDB
  * BTKitty
  * ConCen
+ * Corsaro.red
  * cpasbien
  * cpasbienClone
  * Demonoid
@@ -60,10 +61,10 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * MacTorrents
  * MagnetDL
  * MejorTorrent <!-- maintained by ivandelabeldad -->
- * MkvCage
  * Monova
  * MovCr
  * Newpct (aka: tvsinpagar, descargas2020, torrentlocura, torrentrapid, tumejortorrent, pctnew, etc)
+ * Nitro
  * Nyaa.si
  * Nyaa-Pantsu
  * OxTorrent
@@ -78,7 +79,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * sukebei-Pantsu
  * TFile
  * The Pirate Bay (TPB)
- * TNTVillage <!-- maintained by bonny1992 -->
  * Tokyo Tosho
  * Torlock
  * Torrent Downloads (TD)
@@ -97,7 +97,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Zooqle
 
 ### Supported Semi-Private Trackers
- * 7tor
  * Alein
  * AlexFilm
  * AniDUB
@@ -413,7 +412,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * x-ite.me (XM)
  * xBytesV2
  * XSpeeds (XS)
- * XKTorrent
  * XWTorrents (XWT)
  * Xthor
  * XtremeFile

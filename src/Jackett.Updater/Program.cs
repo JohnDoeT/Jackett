@@ -349,6 +349,9 @@ namespace Jackett.Updater
                 "Definitions/megabliz.yml",
                 "Definitions/tigers-dl.yml",
                 "Definitions/worldwidetorrents.yml",
+                "Definitions/tntvillage.yml",
+                "Definitions/xktorrent.yml",
+                "Definitions/mkvcage.yml",
             };
 
             foreach (var oldFile in oldFiles)
