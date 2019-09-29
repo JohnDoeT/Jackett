@@ -30,7 +30,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * AudioBook Bay (ABB)
  * btbit
  * BTDB
- * BTKitty
+ * BTDIGG
  * ConCen
  * Corsaro.red
  * cpasbien
@@ -54,7 +54,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * KATcrs
  * KickAssTorrent (KATcr)
  * KickAssTorrent (thekat.se clone)
- * KikiBT
  * LemenCili
  * LePorno
  * LimeTorrents
@@ -84,7 +83,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Torrent Downloads (TD)
  * TorrentFunk
  * TorrentGalaxy.org (TGx)
- * TorrentKitty
  * TorrentProject2
  * TorrentQuest
  * Torrents.csv
@@ -330,7 +328,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * RetroFlix
  * RevolutionTT
  * RGU
- * RocketHD
  * RoDVD (Cinefiles)
  * Romanian Metal Torrent (RMT)
  * RPTorrents
@@ -345,6 +342,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * SeedFile (SF)
  * Shareisland
  * ShareSpaceDB
+ * ShareUniversity
  * Shazbat
  * Shellife (SL)
  * SiamBIT
